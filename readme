@@ -1,0 +1,29 @@
+Added Files:
+
+locale/en/LC_MESSAGES/django.po: English language file for translation.
+locale/ja/LC_MESSAGES/django.po: Japanese language file for translation.
+
+
+myapp/urls.py: Modified to include URL patterns for language switching.
+myapp/views.py: Updated with view functions that render templates.
+myapp/templates/myapp/*.html: HTML templates with translation strings marked for translation.
+myapp/admin.py: Registered models for translation in the admin panel.
+myproject/urls.py: Modified to include language switcher URLs.
+myproject/templates/admin/base_site.html: HTML templates with translation strings marked for translation.
+
+
+Please check the setting configration also.
+
+
+Run makemessages command to generate language files.
+python manage.py makemessages -l en
+python manage.py makemessages -l ja
+
+
+Run compilemessages command to compile language files.
+
+
+python manage.py compilemessages
+
+
+

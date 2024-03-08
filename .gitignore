@@ -1,0 +1,22 @@
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore local development settings
+*.env
+
+# Ignore database files
+db.sqlite3
+
+# Ignore static files (collected assets)
+staticfiles/
+
+# Ignore media files
+media/
+
+# Ignore virtual environment
+env/
+
+
+# Ignore migration files
+**/migrations/
